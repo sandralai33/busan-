@@ -211,7 +211,6 @@ footer{text-align:center;font-size:13px;margin-top:28px}
   <div class="rw"><span>退房</span><span>12/6 11:00 前</span></div>
   <div class="rw"><span>訂房</span><span>Agoda，1 間房</span></div>
   <div class="rw"><span>地址</span><span>Unit 212, 2F, Store B, Hyupsung Marina G7, 160 Chungjang-daero, Dong-gu, Busan 48822</span></div>
-  <div class="rw"><span>訂房編號</span><span>待補</span></div>
 </div>
 <div class="card stay">
   <div class="tagrow"><span class="t st td">預訂階段</span><span class="t aq">12/6 到 12/8</span></div>
@@ -222,7 +221,6 @@ footer{text-align:center;font-size:13px;margin-top:28px}
   <div class="rw"><span>條件</span><span>無法停車、禁菸、不含餐</span></div>
   <div class="rw"><span>入住者</span><span>預計 FISH、承愉、佳芳</span></div>
   <div class="rw"><span>取消</span><span>11/6 23:59 前可免費取消</span></div>
-  <div class="rw"><span>訂房編號與地址</span><span>付款完成後補上</span></div>
 </div>
 </section>
 
@@ -380,7 +378,7 @@ D.forEach(function(d,i){
 var today=new Date(),start=new Date('2026-12-03T00:00:00+08:00'),idx=Math.floor((today-start)/864e5);
 show(idx>=0&&idx<D.length?idx:0,false);
 /* 待辦 */
-var T=['11/30 傍晚起填韓國電子入境卡，每人各填','確認 12/6 12:30 天空膠囊列車預約（青沙浦到尾浦，4 人座）','取得 12/3 Klook 接機司機的聯絡方式','BrownSuites Busan Station 的 Agoda 訂房編號','釜山西面布羅飯店付款（11/6 23:59 前可免費取消）','BR163 回程的桃園航廈','買絕緣膠帶與透明夾鏈袋，行動電源貼好裝袋'];
+var T=['11/30 傍晚起填韓國電子入境卡，每人各填','確認 12/6 12:30 天空膠囊列車預約（青沙浦到尾浦，4 人座）','取得 12/3 Klook 接機司機的聯絡方式','釜山西面布羅飯店付款（11/6 23:59 前可免費取消）','BR163 回程的桃園航廈','買絕緣膠帶與透明夾鏈袋，行動電源貼好裝袋'];
 var S={};try{S=JSON.parse(localStorage.getItem('busan-pb-todo')||'{}')}catch(e){S={}}
 var ul=$('todol');
 function prog(){var n=T.filter(function(_,i){return S['t'+i]}).length;$('prog').textContent='完成 '+n+' / '+T.length+(n===T.length?'，全部搞定！':'')}
